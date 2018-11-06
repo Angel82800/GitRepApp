@@ -48,7 +48,7 @@ export default function (navigation) {
         replaceCurrentSceneProps: () => {},
         routeScene: (scene, passProps, params = {}) => {
           navigation.push({
-            screen: `Social.${scene}`,
+            screen: `Rep.${scene}`,
             navigatorStyle: {
               navBarHidden: true,
               screenBackgroundColor: 'white',
@@ -73,7 +73,7 @@ export default function (navigation) {
         },
         resetTo: (scene, passProps, params = {}) => {
           navigation.resetTo({
-            screen: `Social.${scene}`,
+            screen: `Rep.${scene}`,
             title: params.title,
             animated: params.animated,
             navigatorStyle: {

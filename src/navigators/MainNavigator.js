@@ -19,6 +19,6 @@ export function startApp(stage = 0) {
                     navBarHidden: true,
                 }
             }
-        })
+        });
     }
 }

@@ -36,7 +36,7 @@ export default function initializeStore() {
         store,
         {
             storage: AsyncStorage,
-            whitelist: []
+            whitelist: ['search']
         }
     );
 

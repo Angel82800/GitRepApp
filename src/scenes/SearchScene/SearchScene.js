@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { View, Text } from 'react-native';
+import { SearchContainer } from 'RepContainers';
 
 export class SearchScene extends PureComponent {
     static propTypes = {
@@ -11,7 +11,7 @@ export class SearchScene extends PureComponent {
 
     render() {
         const { routeBack, routeScene, popToRoot, navigator } = this.props;
-
+        
         return (
             <SearchContainer
                 routeScene={routeScene}

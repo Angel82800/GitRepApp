@@ -1,6 +1,6 @@
 // @flow
 
-export { default as gate } from './reducer';
+export { default as search } from './reducer';
 export { connectSearch } from './connectSearch';
 export { searchActionCreators } from './actions';
-export { default as gateSaga } from './saga';
+export { default as searchSaga } from './saga';

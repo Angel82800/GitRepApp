@@ -1,12 +1,10 @@
 import React from 'react';
-
-import { provider as Provider } from 'SocialRedux';
+import { provider as Provider } from 'RepRedux';
 import mapNavigatorToProps from './mapNavigationToProps';
 
 export default function (Component) {
-  
   return function navigationConnector() {
-    return function inject(props) {
+    return function inject(props) {      
       return (
         <Provider>
             <Component

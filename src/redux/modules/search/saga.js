@@ -16,12 +16,12 @@ import {
 } from './actions';
 import {
     SEARCH_SERVICE,
-    SEACH_API
-  } from 'KetoServices';
+    SEARCH_API
+  } from 'RepServices';
 
 function* asyncSearch({ payload, resolve, reject }) {
     try {
-        const response = yield call(SEARCH_SERVICE, { api: SEACH_API, params: payload });
+        const response = yield call(SEARCH_SERVICE, { api: SEARCH_API, params: payload });
         if (response.success) {
             // yield put(searchActionCreators.searchSuccess(response));
             resolve(response);
